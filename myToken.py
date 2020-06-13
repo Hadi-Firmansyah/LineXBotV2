@@ -1,0 +1,2 @@
+TOKEN = "1260136213:AAGDHXlqB4xtt58Gj_cdjdJTn5z_YA0j0VA"
+SAPA = "Welcome To LineXBotV2"
