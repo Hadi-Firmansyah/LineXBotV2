@@ -19,19 +19,22 @@ class myBot:
     def start(message):
         photo = open('img/tb.jpg','rb')
         MyBot.send_photo(message.from_user.id,photo)
-        teks = myToken.SAPA + "\nAdmin & Developer Hadi Firmansyah" + "\n"\
-                              "Smk Taruna Bhakti" + "\n"\
+        teks = myToken.SAPA + "\n" \
+                              "Admin & Developer By Hadi Firmansyah" + "\n"\
+                              "From : Smk Taruna Bhakti" + "\n"\
                               "" + "\n"\
-                              "/help Untuk Melihat Fitur Yang Ada" + "\n"\
-                              "Tanggal/Jam Sekarang : " + str(waktuSekarang)
+                              "/help For Activated Bot Asisten " + "\n"\
+                              "" + "\n"\
+                              "Time : " + str(waktuSekarang)
         MyBot.reply_to(message,teks)
 
     @MyBot.message_handler(commands=['help'])
     def help(message):
-        teksnya = "I'm Bot T_T" + "\n" \
-                  "/start Untuk Memulai Perintah" + "\n" \
-                  "/help Untuk Menghubungi Bot" + "\n" \
-                  "/datasiswa Untuk Melihat Data Siswa"
+        teksnya = "Hello^_^" + "\n" \
+                  "" + "\n"\
+                  "/start : Untuk Memulai Bot" + "\n" \
+                  "" + "\n" \
+                  "/datasiswa : Untuk Menampilkan Data Siswa RPL"
         MyBot.reply_to(message, teksnya)
 
     @MyBot.message_handler(commands=['datasiswa'])
